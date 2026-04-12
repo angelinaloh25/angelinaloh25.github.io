@@ -1,1 +1,44 @@
-<h1>hello world</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angelina Loh Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="transitions.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <main>
+      <h1>Hi, I'm Angelina!</h1>
+      <p>I'm <span id="role">a developer</span>.</p>
+    </main>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#navbar-placeholder").load("navbar.html");
+
+        const roles = [
+          "a developer",
+          "a designer",
+          "an illustrator",
+          "a crafter",
+        ];
+        let index = 0;
+        const roleElement = $("#role");
+
+        setInterval(function () {
+          index = (index + 1) % roles.length;
+          roleElement.fadeOut(500, function () {
+            roleElement.text(roles[index]).fadeIn(500);
+          });
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

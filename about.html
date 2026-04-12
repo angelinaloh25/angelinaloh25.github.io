@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Angelina Loh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="transitions.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <main>
+      <div class="about-container">
+        <div class="portrait-container">
+          <img
+            src="images/portrait.jpg"
+            alt="portrait-img"
+            class="portrait-img"
+          />
+          <div>Me at the top of Victoria Peak in HK!</div>
+        </div>
+        <div class="about-content">
+          <h2>Nice to meet you!</h2>
+          <br />
+          <p>My name is Angelina and I'm from the California Bay Area.</p>
+          <br />
+          <p>
+            I'm currently attending UCSD as an undegraduate pursuing a
+            Bachelor's in
+            <strong
+              >Cognitive Science (Specialization in Design &
+              Interaction)</strong
+            >
+            with a minor in Computer Science. After I graduate, I'll be joining
+            <strong>TikTok as a full-time software engineer</strong>. My goal is
+            to be a front-end software engineer with strong design awareness and
+            knowledge of UI/UX.
+          </p>
+          <br />
+          <p>
+            In my free time, I love drawing, scrapbooking, anime/manga,
+            Nintendo, and taking instant photos.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#navbar-placeholder").load("navbar.html");
+      });
+    </script>
+  </body>
+</html>

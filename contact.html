@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Angelina Loh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="transitions.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <main>
+      <h2>Contact</h2>
+      <div class="contact-body">
+        <p class="contact-intro">
+          If you have any questions, feel free to reach out through email or
+          connect with me on LinkedIn! I'd love to work on creative projects
+          together.
+        </p>
+        <div class="contact-list">
+          <div class="contact-item">
+            <img src="logo_svgs/email.svg" alt="email" class="contact-icon" />
+            <span>angelinaloh25@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <img
+              src="logo_svgs/linkedin.svg"
+              alt="linkedin"
+              class="contact-icon"
+            />
+            <a href="https://www.linkedin.com/in/angloh/"
+              >linkedin.com/in/angloh</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#navbar-placeholder").load("navbar.html");
+      });
+    </script>
+  </body>
+</html>
