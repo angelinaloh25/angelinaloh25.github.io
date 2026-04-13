@@ -15,13 +15,47 @@
   <body>
     <div id="navbar-placeholder"></div>
     <main>
-      <h2>Crafts & Artistic Hobbies</h2>
-      <p>Content coming soon.</p>
+      <h2>Crafts & Artistic Hobbies (WIP)</h2>
+      <p class="page-intro">Scrapbooking, instant photography, decoden creations, and more.</p>
+      <div class="carousel">
+        <button class="carousel-btn prev">«</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track">
+            <img src="images/crafts_card.jpg" alt="crafts" class="carousel-img" />
+            <img src="images/spread_1.jpg" alt="scrapbook spread 1" class="carousel-img" />
+            <img src="images/spread_2.jpg" alt="scrapbook spread 2" class="carousel-img" />
+            <img src="images/instant_photo.jpg" alt="instant photo" class="carousel-img" />
+            <img src="images/decoden_1.jpg" alt="decoden" class="carousel-img" />
+          </div>
+        </div>
+        <button class="carousel-btn next">»</button>
+      </div>
     </main>
 
     <script type="text/javascript">
       $(document).ready(function () {
         $("#navbar-placeholder").load("navbar.html");
+
+        let current = 0;
+        const imgs = $(".carousel-img");
+        const total = imgs.length;
+
+        function showSlide(index) {
+          imgs.removeClass("active");
+          $(imgs[index]).addClass("active");
+        }
+
+        showSlide(current);
+
+        $(".next").click(function () {
+          current = (current + 1) % total;
+          showSlide(current);
+        });
+
+        $(".prev").click(function () {
+          current = (current - 1 + total) % total;
+          showSlide(current);
+        });
       });
     </script>
   </body>
