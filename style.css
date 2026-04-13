@@ -84,6 +84,10 @@ main {
   transform: scale(1.04);
 }
 
+a.card {
+  text-decoration: none;
+}
+
 .card-content {
   position: relative;
   z-index: 1;
