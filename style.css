@@ -326,6 +326,35 @@ a.card {
   text-decoration: underline;
 }
 
+.case-study {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cs-section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #5b81d2;
+  border-bottom: 2px solid #5b81d2;
+  padding-bottom: 0.25rem;
+}
+
+.cs-body {
+  font-size: 16px;
+  color: #63668e;
+  line-height: 1.8;
+}
+
 @media (max-width: 600px) {
   body h1 {
     font-size: 40px;
