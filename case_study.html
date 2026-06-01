@@ -28,14 +28,14 @@
           <div class="cs-image-row cs-header-images">
             <figure class="cs-figure">
               <img
-                src="case_study_images/What makes this seem AI_ (Filled).png"
+                src="case_study_images/Final What makes this seem AI_ (Filled).png"
                 alt="What makes this seem AI — filled screen"
                 class="cs-img"
               />
             </figure>
             <figure class="cs-figure">
               <img
-                src="case_study_images/Full Note + Rate Note.png"
+                src="case_study_images/Final Full Note + Rate Note.png"
                 alt="Full note and rate note prototype screens"
                 class="cs-img"
               />
@@ -319,7 +319,7 @@
         <section class="cs-section">
           <div class="cs-section-header">
             <span class="cs-section-label">03</span>
-            <h3 class="cs-section-title">Initial Hi-Fi Prototypes</h3>
+            <h3 class="cs-section-title">Initial Prototypes</h3>
           </div>
           <div class="cs-section-content">
             <!-- USER FLOW 1 -->
@@ -552,11 +552,12 @@
           <div class="cs-section-content">
             <p class="cs-body">
               We interviewed four out of the same five users we spoke to during
-              our preliminary user research and showed them our intitial
-              prototypes. Two preferred the reporting feature primarily for its
-              convenience and ease, while the other two preferred the community
-              notes for its flexibility and comprehensiveness. However, the two
-              users who preferred the report feature admitted that
+              our preliminary user research and asked them what they thought
+              about our intitial prototypes. Two preferred the reporting feature
+              primarily for its convenience and ease, while the other two
+              preferred the community notes for its flexibility and
+              comprehensiveness. However, the two users who preferred the report
+              feature admitted that
               <strong>they probably wouldn't actually use it</strong>; they
               simply preferred it because it was easier.
             </p>
@@ -581,15 +582,144 @@
               they'd still engage with the feature. The community note feature
               only really needs one person to write it, while the report feature
               needs multiple users to submit a report—which may just be
-              unrealistic.
+              unrealistic. Furthermore, the existing reporting feature on
+              Instagram is for purpose of taking down posts, not adding a label
+              to them, so it felt misaligned.
             </p>
+            <div class="cs-callout">
+              So we decided that the community note feature was better suited
+              for our purpose than the reporting + label feature.
+            </div>
+            <p class="cs-body">
+              From our interviews, we also received insightful feedback on
+              various aspects of our community note feature. Here are the main
+              highlights:
+            </p>
+            <p class="cs-body">
+              Surprisingly, all of our users didn't think the
+              <strong>upload media</strong>
+              feature was necessary since the post's image would already be
+              included in the note. In fact, one user mentioned that it'd be
+              inconvenient and disruptive to have to leave the current page or
+              even the app to get outside screenshots or screen recordings.
+            </p>
+            <figure class="cs-figure cs-figure-spaced">
+              <img
+                src="case_study_images/media_upload.png"
+                alt="Media upload feature"
+                class="cs-img"
+              />
+            </figure>
+            <p class="cs-body">
+              Three out of four users preferred
+              <strong>circle markup</strong> better than the freehand draw due
+              to its simplicity and sufficiency. Also, one interviewee suggested
+              the circles being automatically numbered so that you could more
+              easily refer to a specific circle when writing the note. All users
+              agreed there should be more than just one color option for the
+              circles. However, they found the <strong>trash icon</strong>'s
+              function unintuitive: does it clear all circles or just one?
+            </p>
+            <figure class="cs-figure cs-figure-spaced">
+              <img
+                src="case_study_images/Circle_markup.png"
+                alt="Circle markup feature"
+                class="cs-img"
+              />
+            </figure>
+            <p class="cs-body">
+              The <strong>confidence scale</strong> had mixed reception. One
+              interviewee claimed it was unnecessary because "people going out
+              of their way to actually write a community note" would always high
+              confidence anyways. Contrary to this opinion, two users liked it
+              because, with its nuance, they felt they could express their
+              opinion even if they weren't entirely confident. However, a user
+              expressed that it is unclear how the confidence scale factors into
+              their community note.
+            </p>
+            <figure class="cs-figure cs-figure-spaced">
+              <img
+                src="case_study_images/confidence_scale.png"
+                alt="Confidence scale feature"
+                class="cs-img"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- REVISED PROTOTYPES -->
+        <section class="cs-section">
+          <div class="cs-section-header">
+            <span class="cs-section-label">05</span>
+            <h3 class="cs-section-title">Revised Prototypes</h3>
+          </div>
+          <div class="cs-section-content">
+            <div class="cs-revised-grid">
+              <p class="cs-body">
+                We then listened to our users and made the following changes to
+                our prototypes.
+              </p>
+              <figure class="cs-figure">
+                <img
+                  src="case_study_images/BA_markup.png"
+                  alt="Write community note screen"
+                  class="cs-img"
+                />
+              </figure>
+              <p class="cs-body">
+                Repurposing the existing "Drag to delete" UI from Instagram
+                Stories Create Mode, we eliminated ambiguity about how to delete
+                circles. Then, to make the writing process for our users easier,
+                we implemented the circle numbering system one of our
+                interviewees had suggested; it's now a lot simpler to specify
+                which circled area you're referring to. We also added the option
+                to change colors/line weights for circles; if the image was
+                primarily red, for instance, having the option to choose big
+                blue circles would help visibility.
+              </p>
+              <figure class="cs-figure">
+                <img
+                  src="case_study_images/BA_write_community_note.png"
+                  alt="Markup screen"
+                  class="cs-img"
+                />
+              </figure>
+              <p class="cs-body">
+                On the markup screen, we simplified the white corner edges to be
+                a thin white outline on the image to reduce confusion about its
+                function. We opted for keeping the confidence scale because some
+                of our interviewees felt the feature was important, especially
+                for when they wanted to submit a note but when unconfident. We
+                also removed the media upload feature our users found
+                unnecessary, making this screen less cluttered and more
+                purposeful.
+              </p>
+              <figure class="cs-figure">
+                <img
+                  src="case_study_images/BA_community_note.png"
+                  alt="Community note screen"
+                  class="cs-img"
+                />
+              </figure>
+              <p class="cs-body">
+                Finally, on the community note, we added a caption under the
+                title indicating the community note author's confidence that
+                reflects the author's selection on the confidence scale. This is
+                crucial because it adds nuance to the community note: if a note
+                said low confidence, then it encourages the viewer to decide for
+                themselves and take the AI accusation with a grain of salt. We
+                also added a reporting feature for the sake of community safety:
+                if a note is clearly malicious or inappropriate, reporting it
+                would be better suited than simply giving it a thumbs down.
+              </p>
+            </div>
           </div>
         </section>
 
         <!-- CREDITS -->
         <section class="cs-section">
           <div class="cs-section-header">
-            <span class="cs-section-label">05</span>
+            <span class="cs-section-label">06</span>
             <h3 class="cs-section-title">Credits</h3>
           </div>
           <div class="cs-section-content">

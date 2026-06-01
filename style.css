@@ -486,6 +486,32 @@ a.card {
   box-shadow: 0 2px 16px rgba(61, 52, 99, 0.09);
 }
 
+.cs-revised-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cs-revised-grid .cs-img {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.cs-revised-grid p + figure {
+  margin-top: 2rem;
+}
+
+.cs-revised-grid > p:first-child + figure {
+  margin-top: 0;
+}
+
+.cs-revised-grid > p {
+  align-self: stretch;
+}
+
 .cs-body {
   font-size: 16px;
   color: #63668e;
@@ -646,6 +672,13 @@ a.card {
   gap: 0.4rem;
   flex: 1;
   min-width: 200px;
+}
+
+.cs-figure-spaced {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  max-width: 80%;
+  align-self: center;
 }
 
 .cs-img {
