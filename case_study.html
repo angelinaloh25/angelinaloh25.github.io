@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Case Study | Angelina Loh</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="case_study.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -16,55 +17,55 @@
     <div id="navbar-placeholder"></div>
     <main>
       <div class="case-study">
-        <div class="cs-page-header">
-          <div class="cs-page-header-text">
-            <h2 class="cs-page-title">Extending Instagram for Human Artists</h2>
-            <p class="cs-page-caption">
+        <div class="page-header">
+          <div class="page-header-text">
+            <h2 class="page-title">Extending Instagram for Human Artists</h2>
+            <p class="page-caption">
               Introducing a community notes feature dedicated to identifying
               deceptive AI-generated art to others, sourced from the community
               for the community.
             </p>
           </div>
-          <div class="cs-image-row cs-header-images">
-            <figure class="cs-figure">
+          <div class="image-row header-images">
+            <figure class="figure">
               <img
                 src="case_study_images/Final What makes this seem AI_ (Filled).png"
                 alt="What makes this seem AI — filled screen"
-                class="cs-img"
+                class="img"
               />
             </figure>
-            <figure class="cs-figure">
+            <figure class="figure">
               <img
                 src="case_study_images/Final Full Note + Rate Note.png"
                 alt="Full note and rate note prototype screens"
-                class="cs-img"
+                class="img"
               />
             </figure>
           </div>
         </div>
 
         <!-- OVERVIEW -->
-        <section class="cs-section">
-          <div class="cs-section-header">
-            <span class="cs-section-label">01</span>
-            <h3 class="cs-section-title">Overview</h3>
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">01</span>
+            <h3 class="section-title">Overview</h3>
           </div>
-          <div class="cs-section-content">
-            <p class="cs-body">
+          <div class="section-content">
+            <p class="body">
               Currently, floods of AI-generated slop on social media platforms
               like Instagram threaten
               <strong>hobbyists and aspiring artists</strong>.
             </p>
-            <div class="cs-header-images">
-              <figure class="cs-figure">
+            <div class="header-images">
+              <figure class="figure">
                 <img
                   src="case_study_images/Deceptive AI art.png"
                   alt="Deceptive AI art"
-                  class="cs-img cs-img-sm"
+                  class="img img-sm"
                 />
               </figure>
             </div>
-            <p class="cs-body">
+            <p class="body">
               At first glance, doesn't this image look well-drawn? Look a bit
               closer and you might notice her missing finger and other illogical
               inconsistencies. Too many times I've been deceived by AI-generated
@@ -75,11 +76,11 @@
               same playing field as one created with a prompt and click.
             </p>
 
-            <div class="cs-callout">
+            <div class="callout">
               The issue is that AI-generated posts are often deceptive and lack
               transparency about their gen-AI usage.
             </div>
-            <p class="cs-body">
+            <p class="body">
               This takes recognition, engagement, and potential business
               opportunities away from real human artists. In addition, AI's
               deceptive presence has caused much
@@ -88,7 +89,7 @@
               inauthentic artwork.
             </p>
 
-            <ul class="cs-list">
+            <ul class="list">
               <li>
                 AI-generated art has been deceptively passed off as human-made,
                 stealing
@@ -139,7 +140,7 @@
                 after Meta announced all content could be used as training data.
               </li>
             </ul>
-            <p class="cs-body">
+            <p class="body">
               A platform becoming flooded with unlabeled "slop" could also
               drastically lower people's impression of the company's brand
               overall. In our user research, all our interviewees expressed a
@@ -148,35 +149,35 @@
               Center:
             </p>
 
-            <div class="cs-stat-block">
-              <div class="cs-stat">
-                <div class="cs-stat-number">76%</div>
-                <div class="cs-stat-label">
+            <div class="stat-block">
+              <div class="stat">
+                <div class="stat-number">76%</div>
+                <div class="stat-label">
                   of Americans think it's "extremely or very important" for
                   AI-generated content to be labeled as such
                 </div>
               </div>
-              <div class="cs-stat">
-                <div class="cs-stat-number">53%</div>
-                <div class="cs-stat-label">
+              <div class="stat">
+                <div class="stat-number">53%</div>
+                <div class="stat-label">
                   of Americans feel "not too or not at all confident" in their
                   ability to spot AI-generated content
                 </div>
               </div>
             </div>
-            <p class="cs-stat-source">
+            <p class="stat-source">
               <a
                 href="https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/"
                 >2025 Pew Research Center survey</a
               >
             </p>
 
-            <div class="cs-callout">
+            <div class="callout">
               So we designed a community-sourced feature for users to clearly
               identify AI-generated visual content to others.
             </div>
 
-            <p class="cs-body">
+            <p class="body">
               We specifically focused on Instagram because it's image-based and
               currently doesn't have any effective solution. Our goal isn't to
               remove or ban AI-generated content, but to help the platform be
@@ -186,7 +187,7 @@
               <strong>platform as a whole</strong>.
             </p>
 
-            <p class="cs-body">
+            <p class="body">
               This is a complex issue; no single feature or redesign can
               completely solve it. However, implementing at least some
               infrastructure on the platform that helps address it would signal
@@ -200,13 +201,13 @@
         </section>
 
         <!-- USER RESEARCH -->
-        <section class="cs-section">
-          <div class="cs-section-header">
-            <span class="cs-section-label">02</span>
-            <h3 class="cs-section-title">Preliminary User Research</h3>
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">02</span>
+            <h3 class="section-title">Preliminary User Research</h3>
           </div>
-          <div class="cs-section-content">
-            <p class="cs-body">
+          <div class="section-content">
+            <p class="body">
               We conducted user research to gain insight into personal
               experiences and perspectives on generative AI in the online art
               space. Our interviewees consisted of three hobbyist artists
@@ -218,7 +219,7 @@
               just artists, but anyone who cares about the issue.
             </p>
 
-            <p class="cs-body">
+            <p class="body">
               Despite coming from a variety of backgrounds,
               <strong
                 >they all expressed a strongly negative stance against
@@ -229,14 +230,14 @@
               permission, to its threat to the careers of real human artists.
             </p>
 
-            <blockquote class="cs-pullquote">
-              "Seeing AI have such a huge presence in the professional world
-              feels like salt in the wound — it was trained on the work of the
-              very artists they stole from."
-              <cite>— Illustrator interviewee</cite>
+            <blockquote class="pullquote">
+              Seeing AI have such a huge presence in the professional world
+              feels like "salt in the wound" because it was trained on the work
+              of the very artists they stole from.
+              <cite>— an Instagram illustrator interviewee</cite>
             </blockquote>
 
-            <p class="cs-body">
+            <p class="body">
               Although all interviewees expressed frustration over AI art
               showing up on their feed, they also all described being
               <strong>somewhat desensitized</strong> to it. Nowadays, most
@@ -244,19 +245,19 @@
               thinking much about it.
             </p>
 
-            <blockquote class="cs-pullquote">
+            <blockquote class="pullquote">
               "I don't care about it anymore. Don't want to give it any
               engagement so I just wanna scroll past it."
-              <cite>— Interviewee</cite>
+              <cite>— non-artist interviewee</cite>
             </blockquote>
 
-            <p class="cs-body">
+            <p class="body">
               Because they've seen it so often before but can't actively do
               anything about it, all they can do is avoid giving it further
               engagement.
             </p>
 
-            <p class="cs-body">
+            <p class="body">
               When asked about what they wished social media platforms would do
               about the flood of AI-generated content, surprisingly
               <strong
@@ -271,16 +272,16 @@
               design.
             </p>
 
-            <div class="cs-float-block">
-              <figure class="cs-figure cs-float-right">
+            <div class="float-block">
+              <figure class="figure float-right">
                 <img
                   src="case_study_images/workplace.jpg"
                   alt="Interviewee's workspace"
-                  class="cs-img"
+                  class="img"
                 />
                 <figcaption>An interviewee's workspace</figcaption>
               </figure>
-              <p class="cs-body">
+              <p class="body">
                 Our interviews weren't just for user research purposes; we also
                 got to know and understand our interviewees
                 <strong>as artists and as people.</strong> We had the
@@ -294,20 +295,20 @@
                 >
               </p>
             </div>
-            <div class="cs-image-row">
-              <figure class="cs-figure">
+            <div class="image-row">
+              <figure class="figure">
                 <img
                   src="case_study_images/interviewee_art_wip.png"
                   alt="Interviewee's artwork in progress"
-                  class="cs-img"
+                  class="img"
                 />
                 <figcaption>An interviewee's artwork (WIP)</figcaption>
               </figure>
-              <figure class="cs-figure">
+              <figure class="figure">
                 <img
                   src="case_study_images/interviewee_art_final.png"
                   alt="Interviewee's finished artwork"
-                  class="cs-img"
+                  class="img"
                 />
                 <figcaption>An interviewee's artwork (final)</figcaption>
               </figure>
@@ -316,18 +317,18 @@
         </section>
 
         <!-- HIGH-FIDELITY PROTOTYPES -->
-        <section class="cs-section">
-          <div class="cs-section-header">
-            <span class="cs-section-label">03</span>
-            <h3 class="cs-section-title">Initial Prototypes</h3>
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">03</span>
+            <h3 class="section-title">Initial Prototypes</h3>
           </div>
-          <div class="cs-section-content">
+          <div class="section-content">
             <!-- USER FLOW 1 -->
-            <div class="cs-userflow">
-              <h4 class="cs-subsection-title cs-subsection-sticky">
+            <div class="userflow">
+              <h4 class="subsection-title subsection-sticky">
                 User Flow #1: Reporting Add-on and New AI Tag
               </h4>
-              <p class="cs-body">
+              <p class="body">
                 This user flow enables users to report misleading AI content
                 using the existing report feature on Instagram. When enough of
                 these reports have been filed against a post, a new AI tag
@@ -335,16 +336,16 @@
                 address users' need for an option to specifically report content
                 that does not explicitly disclose AI-use in its creation.
               </p>
-              <div class="cs-userflow-rows">
-                <div class="cs-userflow-row">
-                  <figure class="cs-figure cs-userflow-img">
+              <div class="userflow-rows">
+                <div class="userflow-row">
+                  <figure class="figure userflow-img">
                     <img
                       src="case_study_images/Report with new AI report option.png"
                       alt="Report screen with new AI report option"
-                      class="cs-img"
+                      class="img"
                     />
                   </figure>
-                  <p class="cs-body">
+                  <p class="body">
                     <strong>Entrypoint:</strong>
                     We added a new "Misleading AI-generated content" option to
                     the existing report page of Instagram. During our user
@@ -355,8 +356,8 @@
                     ineffective and unsatisfying.
                   </p>
                 </div>
-                <div class="cs-userflow-row">
-                  <p class="cs-body">
+                <div class="userflow-row">
+                  <p class="body">
                     When the user taps on the new "Misleading AI-generated
                     content" option, this is the new screen they are brought to.
                     Here, the user is able to pinch the image to highlight one
@@ -364,41 +365,41 @@
                     list of multiple choice reasons. If an option isn't listed,
                     they can write their own under 'Other.'
                   </p>
-                  <div class="cs-userflow-img-group cs-userflow-img">
-                    <figure class="cs-figure">
+                  <div class="userflow-img-group userflow-img">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Misleading AI Report Screen.png"
                         alt="Misleading AI Report Screen"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
-                    <figure class="cs-figure">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Misleading AI Report Screen (filled).png"
                         alt="Misleading AI Report Screen filled"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
                   </div>
                 </div>
-                <div class="cs-userflow-row">
-                  <div class="cs-userflow-img-group cs-userflow-img">
-                    <figure class="cs-figure">
+                <div class="userflow-row">
+                  <div class="userflow-img-group userflow-img">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Home - AI-gen Post with AI Tag.png"
                         alt="Home feed with AI-generated post AI tag"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
-                    <figure class="cs-figure">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Updated AI Info.png"
                         alt="Updated AI Info modal"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
                   </div>
-                  <p class="cs-body">
+                  <p class="body">
                     When enough user reports have been submitted, a
                     non-intrusive circular AI label appears on the top left of
                     the post's image. When the users taps onto this label, this
@@ -414,11 +415,11 @@
             </div>
 
             <!-- USER FLOW 2 -->
-            <div class="cs-userflow">
-              <h4 class="cs-subsection-title cs-subsection-sticky">
+            <div class="userflow">
+              <h4 class="subsection-title subsection-sticky">
                 User Flow #2: Community Notes
               </h4>
-              <p class="cs-body">
+              <p class="body">
                 This user flow is enables users to write community notes to
                 indicate to others a post is AI-generated. This was designed to
                 address users' need for an option to comprehensively explain to
@@ -431,33 +432,33 @@
                 notes feature, but currently it is waitlist-only and not easily
                 accessible.
               </p>
-              <div class="cs-userflow-rows">
-                <div class="cs-userflow-row">
-                  <div class="cs-userflow-img-group cs-userflow-img">
-                    <figure class="cs-figure">
+              <div class="userflow-rows">
+                <div class="userflow-row">
+                  <div class="userflow-img-group userflow-img">
+                    <figure class="figure">
                       <img
                         src="case_study_images/More (existing).png"
                         alt="More options modal (existing)"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
-                    <figure class="cs-figure">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Community Note Modal Pop-up.png"
                         alt="Community Note modal pop-up"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
                   </div>
-                  <p class="cs-body">
+                  <p class="body">
                     <strong>Entrypoint:</strong> on the "More options" modal of
                     each post, the user can tap on the community note option.
                     This will then bring up a secondary modal that allows them
                     to write, request, or rate a community note.
                   </p>
                 </div>
-                <div class="cs-userflow-row">
-                  <p class="cs-body">
+                <div class="userflow-row">
+                  <p class="body">
                     Writing a community note has three required components: an
                     image markup feature, a confidence scale, and a text input
                     box with the option of media uploads. Tapping on the image
@@ -468,41 +469,41 @@
                     comprehensive review than the report feature, but is
                     obviously much more intensive.
                   </p>
-                  <div class="cs-userflow-img-group cs-userflow-img">
-                    <figure class="cs-figure">
+                  <div class="userflow-img-group userflow-img">
+                    <figure class="figure">
                       <img
                         src="case_study_images/What makes this seem AI_.png"
                         alt="What makes this seem AI — empty"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
-                    <figure class="cs-figure">
+                    <figure class="figure">
                       <img
                         src="case_study_images/What makes this seem AI_ (Filled) copy.png"
                         alt="What makes this seem AI — filled"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
                   </div>
                 </div>
-                <div class="cs-userflow-row">
-                  <div class="cs-userflow-img-group cs-userflow-img">
-                    <figure class="cs-figure">
+                <div class="userflow-row">
+                  <div class="userflow-img-group userflow-img">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Circle Suspected Areas.png"
                         alt="Circle suspected areas screen"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
-                    <figure class="cs-figure">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Circle Suspected Areas (Example).png"
                         alt="Circle suspected areas example"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
                   </div>
-                  <p class="cs-body">
+                  <p class="body">
                     This is the screen where users can markup that highlight
                     AI-generated inconsistencies and details with circles. They
                     can add circles, delete them, and undo/redo. We also
@@ -510,8 +511,8 @@
                     feature instead of the circle shape tool.
                   </p>
                 </div>
-                <div class="cs-userflow-row">
-                  <p class="cs-body">
+                <div class="userflow-row">
+                  <p class="body">
                     A community note on the post appears after enough users have
                     rated it as helpful. While more visible than the circular AI
                     label, it is also more intrusive. Tapping on "See full note"
@@ -521,19 +522,19 @@
                     rated it as helpful, and contribute to this rating by
                     upvote/downvoting it themselves.
                   </p>
-                  <div class="cs-userflow-img-group cs-userflow-img">
-                    <figure class="cs-figure">
+                  <div class="userflow-img-group userflow-img">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Home - AI-gen Post with Community Note.png"
                         alt="Home feed with community note on AI-generated post"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
-                    <figure class="cs-figure">
+                    <figure class="figure">
                       <img
                         src="case_study_images/Full Note + Rate Note.png"
                         alt="Full note and rate note screen"
-                        class="cs-img"
+                        class="img"
                       />
                     </figure>
                   </div>
@@ -544,13 +545,13 @@
         </section>
 
         <!-- MORE USER TESTING -->
-        <section class="cs-section">
-          <div class="cs-section-header">
-            <span class="cs-section-label">04</span>
-            <h3 class="cs-section-title">User Testing</h3>
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">04</span>
+            <h3 class="section-title">User Testing</h3>
           </div>
-          <div class="cs-section-content">
-            <p class="cs-body">
+          <div class="section-content">
+            <p class="body">
               We interviewed four out of the same five users we spoke to during
               our preliminary user research and asked them what they thought
               about our intitial prototypes. Two preferred the reporting feature
@@ -561,17 +562,17 @@
               <strong>they probably wouldn't actually use it</strong>; they
               simply preferred it because it was easier.
             </p>
-            <div class="cs-callout">
+            <div class="callout">
               The greatest insight from these interviews was that
               <strong>our target user base isn't everyone.</strong>
             </div>
-            <p class="cs-body">
+            <p class="body">
               The majority of people aren't willing to invest their time and
               energy into identifying AI art to others on the platform, but our
               target user base consists of the small minority who are—so our
               design should cater to them.
             </p>
-            <p class="cs-body">
+            <p class="body">
               Another interesting finding: even though some participants didn't
               prefer the community notes,
               <strong
@@ -586,87 +587,94 @@
               Instagram is for purpose of taking down posts, not adding a label
               to them, so it felt misaligned.
             </p>
-            <div class="cs-callout">
+            <div class="callout">
               So we decided that the community note feature was better suited
               for our purpose than the reporting + label feature.
             </div>
-            <p class="cs-body">
+            <p class="body">
               From our interviews, we also received insightful feedback on
               various aspects of our community note feature. Here are the main
               highlights:
             </p>
-            <p class="cs-body">
-              Surprisingly, all of our users didn't think the
-              <strong>upload media</strong>
-              feature was necessary since the post's image would already be
-              included in the note. In fact, one user mentioned that it'd be
-              inconvenient and disruptive to have to leave the current page or
-              even the app to get outside screenshots or screen recordings.
-            </p>
-            <figure class="cs-figure cs-figure-spaced">
-              <img
-                src="case_study_images/media_upload.png"
-                alt="Media upload feature"
-                class="cs-img"
-              />
-            </figure>
-            <p class="cs-body">
-              Three out of four users preferred
-              <strong>circle markup</strong> better than the freehand draw due
-              to its simplicity and sufficiency. Also, one interviewee suggested
-              the circles being automatically numbered so that you could more
-              easily refer to a specific circle when writing the note. All users
-              agreed there should be more than just one color option for the
-              circles. However, they found the <strong>trash icon</strong>'s
-              function unintuitive: does it clear all circles or just one?
-            </p>
-            <figure class="cs-figure cs-figure-spaced">
-              <img
-                src="case_study_images/Circle_markup.png"
-                alt="Circle markup feature"
-                class="cs-img"
-              />
-            </figure>
-            <p class="cs-body">
-              The <strong>confidence scale</strong> had mixed reception. One
-              interviewee claimed it was unnecessary because "people going out
-              of their way to actually write a community note" would always high
-              confidence anyways. Contrary to this opinion, two users liked it
-              because, with its nuance, they felt they could express their
-              opinion even if they weren't entirely confident. However, a user
-              expressed that it is unclear how the confidence scale factors into
-              their community note.
-            </p>
-            <figure class="cs-figure cs-figure-spaced">
-              <img
-                src="case_study_images/confidence_scale.png"
-                alt="Confidence scale feature"
-                class="cs-img"
-              />
-            </figure>
+            <div class="finding">
+              <figure class="figure figure-spaced">
+                <img
+                  src="case_study_images/media_upload.png"
+                  alt="Media upload feature"
+                  class="img"
+                />
+              </figure>
+              <p class="body">
+                Surprisingly, all of our users didn't think the
+                <strong>upload media</strong>
+                feature was necessary since the post's image would already be
+                included in the note. In fact, one user mentioned that it'd be
+                inconvenient and disruptive to have to leave the current page or
+                even the app to get outside screenshots or screen recordings.
+              </p>
+            </div>
+            <div class="finding">
+              <figure class="figure figure-spaced">
+                <img
+                  src="case_study_images/Circle_markup.png"
+                  alt="Circle markup feature"
+                  class="img"
+                />
+              </figure>
+              <p class="body">
+                Three out of four users preferred
+                <strong>circle markup</strong> better than the freehand draw due
+                to its simplicity and sufficiency. Also, one interviewee
+                suggested the circles being automatically numbered so that you
+                could more easily refer to a specific circle when writing the
+                note. All users agreed there should be more than just one color
+                option for the circles. However, they found the
+                <strong>trash icon</strong>'s function unintuitive: does it
+                clear all circles or just one?
+              </p>
+            </div>
+            <div class="finding">
+              <figure class="figure figure-spaced">
+                <img
+                  src="case_study_images/confidence_scale.png"
+                  alt="Confidence scale feature"
+                  class="img"
+                />
+              </figure>
+              <p class="body">
+                The <strong>confidence scale</strong> had mixed reception. One
+                interviewee claimed it was unnecessary because "people going out
+                of their way to actually write a community note" would always
+                high confidence anyways. Contrary to this opinion, two users
+                liked it because, with its nuance, they felt they could express
+                their opinion even if they weren't entirely confident. However,
+                a user expressed that it is unclear how the confidence scale
+                factors into their community note.
+              </p>
+            </div>
           </div>
         </section>
 
         <!-- REVISED PROTOTYPES -->
-        <section class="cs-section">
-          <div class="cs-section-header">
-            <span class="cs-section-label">05</span>
-            <h3 class="cs-section-title">Revised Prototypes</h3>
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">05</span>
+            <h3 class="section-title">Revised Prototypes</h3>
           </div>
-          <div class="cs-section-content">
-            <div class="cs-revised-grid">
-              <p class="cs-body">
+          <div class="section-content">
+            <div class="revised-grid">
+              <p class="body">
                 We then listened to our users and made the following changes to
-                our prototypes.
+                our prototypes:
               </p>
-              <figure class="cs-figure">
+              <figure class="figure">
                 <img
                   src="case_study_images/BA_markup.png"
                   alt="Write community note screen"
-                  class="cs-img"
+                  class="img"
                 />
               </figure>
-              <p class="cs-body">
+              <p class="body">
                 Repurposing the existing "Drag to delete" UI from Instagram
                 Stories Create Mode, we eliminated ambiguity about how to delete
                 circles. Then, to make the writing process for our users easier,
@@ -677,14 +685,14 @@
                 primarily red, for instance, having the option to choose big
                 blue circles would help visibility.
               </p>
-              <figure class="cs-figure">
+              <figure class="figure">
                 <img
                   src="case_study_images/BA_write_community_note.png"
                   alt="Markup screen"
-                  class="cs-img"
+                  class="img"
                 />
               </figure>
-              <p class="cs-body">
+              <p class="body">
                 On the markup screen, we simplified the white corner edges to be
                 a thin white outline on the image to reduce confusion about its
                 function. We opted for keeping the confidence scale because some
@@ -694,14 +702,14 @@
                 unnecessary, making this screen less cluttered and more
                 purposeful.
               </p>
-              <figure class="cs-figure">
+              <figure class="figure">
                 <img
                   src="case_study_images/BA_community_note.png"
                   alt="Community note screen"
-                  class="cs-img"
+                  class="img"
                 />
               </figure>
-              <p class="cs-body">
+              <p class="body">
                 Finally, on the community note, we added a caption under the
                 title indicating the community note author's confidence that
                 reflects the author's selection on the confidence scale. This is
@@ -716,18 +724,29 @@
           </div>
         </section>
 
-        <!-- CREDITS -->
-        <section class="cs-section">
-          <div class="cs-section-header">
-            <span class="cs-section-label">06</span>
-            <h3 class="cs-section-title">Credits</h3>
+        <!-- CONCLUSION -->
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">06</span>
+            <h3 class="section-title">Conclusion</h3>
           </div>
-          <div class="cs-section-content">
-            <p class="cs-body">
+          <div class="section-content">
+            <p class="body"></p>
+          </div>
+        </section>
+
+        <!-- CREDITS -->
+        <section class="section">
+          <div class="section-header">
+            <span class="section-label">07</span>
+            <h3 class="section-title">Credits</h3>
+          </div>
+          <div class="section-content">
+            <p class="body">
               This design project was done in collaboration with Henry Khauv and
               Alice Yu.
             </p>
-            <p class="cs-body">
+            <p class="body">
               Special thanks to these public Figma UI libraries whose
               components, icons, and styles we used:
               <a href="https://www.figma.com/community/file/1341818988006002653"
