@@ -8,6 +8,68 @@
   padding-bottom: 5rem;
 }
 
+/* Section header — embedded mini TOC, sticky on the left column */
+.section-toc {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.section-toc li {
+  float: none;
+}
+
+.section-toc a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #9899b5;
+  transition: color 0.25s ease, font-size 0.25s ease;
+}
+
+.section-toc a:hover {
+  color: #5b81d2;
+}
+
+.section-toc-num,
+.section-toc-title {
+  transition: color 0.25s ease;
+}
+
+.section-toc-num {
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.section-toc li {
+  transition: margin 0.25s ease;
+}
+
+.section-toc li.is-active {
+  margin: 0.4rem 0;
+}
+
+.section-toc li.is-active a {
+  font-size: 20px;
+  font-weight: 600;
+  gap: 0.4rem;
+}
+
+.section-toc li.is-active .section-toc-num {
+  color: #5b81d2;
+}
+
+.section-toc li.is-active .section-toc-title {
+  color: #2d264a;
+  line-height: 1.35;
+}
+
 /* Page header */
 .page-header {
   display: flex;
@@ -58,36 +120,33 @@
   max-height: 350px;
 }
 
-/* Section — two-column grid with sticky left header */
-.section {
+/* Sections wrapper — sticky TOC sidebar on the left */
+.sections-wrap {
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 0 3rem;
   align-items: start;
 }
 
-.section-header {
+.sections-aside {
   position: sticky;
   top: 1.5rem;
   align-self: start;
+}
+
+.sections-list {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  gap: 0.4rem;
-}
-
-.section-label {
-  font-size: 20px;
-  font-weight: 600;
-  color: #5b81d2;
-}
-
-.section-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #2d264a;
-  line-height: 1.35;
+  flex-direction: column;
+  gap: 4rem;
   min-width: 0;
+}
+
+.section {
+  scroll-margin-top: 1.5rem;
+}
+
+.section-header {
+  display: none;
 }
 
 .section-content {
@@ -384,14 +443,12 @@
 }
 
 @media (max-width: 600px) {
-  .section {
+  .sections-wrap {
     grid-template-columns: 1fr;
   }
 
-  .section-header {
-    position: static;
-    border-bottom: 2px solid #e0ddd6;
-    padding-bottom: 0.5rem;
+  .sections-aside {
+    display: none;
   }
 
   .section-content {

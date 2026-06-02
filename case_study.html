@@ -44,8 +44,13 @@
           </div>
         </div>
 
+        <div class="sections-wrap">
+          <aside class="sections-aside">
+            <ol class="section-toc"></ol>
+          </aside>
+          <div class="sections-list">
         <!-- OVERVIEW -->
-        <section class="section">
+        <section id="overview" class="section">
           <div class="section-header">
             <span class="section-label">01</span>
             <h3 class="section-title">Overview</h3>
@@ -102,7 +107,7 @@
               </li>
               <li>
                 Prominent artists like Karla Ortiz and Sarah Anderson cite AI as
-                a direct cause of lost work — detailed in a
+                a direct cause of lost work, detailed in a
                 <a
                   href="https://www.pbs.org/newshour/arts/visual-artists-fight-back-against-artificial-intelligence-companies-for-repurposing-their-work"
                   >PBS article</a
@@ -117,7 +122,7 @@
                 without creator consent, raising serious ethical concerns.
               </li>
               <li>
-                Deceptive AI content has lowered people's trust in online art —
+                Deceptive AI content has lowered people's trust in online art;
                 in one
                 <a href="https://x.com/Fukou_da_man/status/1877868574456328356"
                   >viral instance on X</a
@@ -125,7 +130,7 @@
                 the platform entirely.
               </li>
               <li>
-                Artists will leave platforms that don't protect their work —
+                Artists will leave platforms that don't protect their work;
                 DeviantArt saw
                 <a
                   href="https://www.dazeddigital.com/art-photography/article/57474/1/i-feel-betrayed-artists-fight-back-against-deviantart-s-new-ai-project-dreamup"
@@ -201,7 +206,7 @@
         </section>
 
         <!-- USER RESEARCH -->
-        <section class="section">
+        <section id="user-research" class="section">
           <div class="section-header">
             <span class="section-label">02</span>
             <h3 class="section-title">Preliminary User Research</h3>
@@ -317,7 +322,7 @@
         </section>
 
         <!-- HIGH-FIDELITY PROTOTYPES -->
-        <section class="section">
+        <section id="initial-prototypes" class="section">
           <div class="section-header">
             <span class="section-label">03</span>
             <h3 class="section-title">Initial Prototypes</h3>
@@ -545,7 +550,7 @@
         </section>
 
         <!-- MORE USER TESTING -->
-        <section class="section">
+        <section id="user-testing" class="section">
           <div class="section-header">
             <span class="section-label">04</span>
             <h3 class="section-title">User Testing</h3>
@@ -570,7 +575,8 @@
               The majority of people aren't willing to invest their time and
               energy into identifying AI art to others on the platform, but our
               target user base consists of the small minority who are—so our
-              design should cater to them.
+              design should cater to them. hat effort barrier also deters trolls
+              and insincere contributors.
             </p>
             <p class="body">
               Another interesting finding: even though some participants didn't
@@ -583,9 +589,10 @@
               they'd still engage with the feature. The community note feature
               only really needs one person to write it, while the report feature
               needs multiple users to submit a report—which may just be
-              unrealistic. Furthermore, the existing reporting feature on
-              Instagram is for purpose of taking down posts, not adding a label
-              to them, so it felt misaligned.
+              unrealistic. Also, as one of our interviewees pointed out, the
+              existing reporting feature on Instagram is for purpose of taking
+              down posts, not adding a label to them, so our new feature
+              would've been misaligned.
             </p>
             <div class="callout">
               So we decided that the community note feature was better suited
@@ -628,9 +635,9 @@
                 suggested the circles being automatically numbered so that you
                 could more easily refer to a specific circle when writing the
                 note. All users agreed there should be more than just one color
-                option for the circles. However, they found the
-                <strong>trash icon</strong>'s function unintuitive: does it
-                clear all circles or just one?
+                option for the circles. However, most found the
+                <strong>trash icon</strong>'s function ambiguous: does it clear
+                all circles or just one?
               </p>
             </div>
             <div class="finding">
@@ -656,7 +663,7 @@
         </section>
 
         <!-- REVISED PROTOTYPES -->
-        <section class="section">
+        <section id="revised-prototypes" class="section">
           <div class="section-header">
             <span class="section-label">05</span>
             <h3 class="section-title">Revised Prototypes</h3>
@@ -717,26 +724,68 @@
                 said low confidence, then it encourages the viewer to decide for
                 themselves and take the AI accusation with a grain of salt. We
                 also added a reporting feature for the sake of community safety:
-                if a note is clearly malicious or inappropriate, reporting it
-                would be better suited than simply giving it a thumbs down.
+                if a note is clearly malicious or inappropriate, reporting it is
+                better suited than simply giving it a thumbs down.
               </p>
             </div>
           </div>
         </section>
 
-        <!-- CONCLUSION -->
-        <section class="section">
+        <!-- TAKEAWAYS -->
+        <section id="takeaways" class="section">
           <div class="section-header">
             <span class="section-label">06</span>
-            <h3 class="section-title">Conclusion</h3>
+            <h3 class="section-title">Takeaways</h3>
           </div>
           <div class="section-content">
-            <p class="body"></p>
+            <p class="body">
+              Beyond just strengthening my visual design skills, I gained a lot
+              of insight about the user-centered design process. For instance,
+              <strong
+                >I learned that different parts of one feature may have
+                different target userbases</strong
+              >: a wide audience of people who care about art and transparency
+              may read and upvote/downvote community notes, but only a small,
+              dedicated part of that audience will actually take the time and
+              effort to write one. Understanding this distinction is crucial
+              because it centers our designs around the people who will actually
+              use it.
+            </p>
+            <p class="body">
+              I also learned when to repurpose existing UI components from an
+              app and when to design new UI. Specifically, when we were trying
+              to find a way to make the delete button on the markup UI more
+              intuitive, we explored the Instagram app to see if it had an
+              existing solution. We realized we didn't have to reinvent the
+              wheel; Instagram's Create Mode already had a "Drag to delete"
+              function that its users are already familiar with. At the same
+              time, we chose to design dedicated new UI for the rest of the
+              markup function because Instagram's Create Mode UI has an
+              overwhelming many options that would have been unnecessary.
+            </p>
+            <p class="body">
+              Our next steps are to design an
+              <strong
+                >appeal process for the original poster to refute false AI
+                accusations</strong
+              >. During our user interviews, a concern that kept coming up was
+              the prevalence of false accusations, or even "witch hunts,"
+              against real artists. As aforementioned,
+              <a href="https://x.com/Fukou_da_man/status/1877868574456328356"
+                >in a extreme case</a
+              >, a real artist on X who had been drawing for years before gen-AI
+              was bullied off the platform after a viral false accusation post.
+              To prevent this from happening with our feature, we would include
+              a way to appeal a community note off your post by providing
+              concrete evidence in the form of speedpaints, .psd files with
+              layers, etc.—similar to how a popular art commission site called
+              <a href="https://vgen.co/">VGen</a> handles it.
+            </p>
           </div>
         </section>
 
         <!-- CREDITS -->
-        <section class="section">
+        <section id="credits" class="section">
           <div class="section-header">
             <span class="section-label">07</span>
             <h3 class="section-title">Credits</h3>
@@ -759,6 +808,8 @@
             </p>
           </div>
         </section>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -766,6 +817,59 @@
       $(document).ready(function () {
         $("#navbar-placeholder").load("navbar.html");
       });
+
+      const tocSections = [
+        { id: "overview", num: "01", title: "Overview" },
+        { id: "user-research", num: "02", title: "Preliminary User Research" },
+        { id: "initial-prototypes", num: "03", title: "Initial Prototypes" },
+        { id: "user-testing", num: "04", title: "User Testing" },
+        { id: "revised-prototypes", num: "05", title: "Revised Prototypes" },
+        { id: "takeaways", num: "06", title: "Takeaways" },
+      ];
+
+      const tocList = document.querySelector(".section-toc");
+      const tocItemsByTarget = {};
+      if (tocList) {
+        tocSections.forEach((item, idx) => {
+          const li = document.createElement("li");
+          li.dataset.target = item.id;
+          if (idx === 0) li.classList.add("is-active");
+          const a = document.createElement("a");
+          a.href = "#" + item.id;
+          const num = document.createElement("span");
+          num.className = "section-toc-num";
+          num.textContent = item.num;
+          const title = document.createElement("span");
+          title.className = "section-toc-title";
+          title.textContent = item.title;
+          a.append(num, title);
+          li.append(a);
+          tocList.append(li);
+          tocItemsByTarget[item.id] = li;
+        });
+
+        const setActive = (id) => {
+          if (!tocItemsByTarget[id]) return;
+          Object.entries(tocItemsByTarget).forEach(([key, li]) => {
+            li.classList.toggle("is-active", key === id);
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActive(entry.target.id);
+              }
+            });
+          },
+          { rootMargin: "-30% 0px -65% 0px" }
+        );
+
+        document
+          .querySelectorAll("section.section[id]")
+          .forEach((s) => observer.observe(s));
+      }
     </script>
   </body>
 </html>
